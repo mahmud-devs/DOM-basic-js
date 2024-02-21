@@ -13,4 +13,18 @@ const button = document.createElement("button");
 
 body.appendChild(div);
 div.appendChild(img);
-console.log(div);
+div.appendChild(h1);
+
+// image all propertie
+
+img.setAttribute("src", "./images/Banner.jpg");
+img.style.width = "100%";
+img.style.backgroundPosition = "center";
+
+// div porperties 
+
+div.style.position = "relative";
+
+// h1 tag all properties
+
+
