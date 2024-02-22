@@ -19,7 +19,10 @@ div.appendChild(h1);
 div.appendChild(button);
 div.appendChild(button2);
 div.appendChild(div2);
-// div.appendChild(div);
+
+// body css
+
+body.style.margin = '0';
 
 // image all propertie
 
@@ -39,9 +42,7 @@ div2.style.top = "0";
 div2.style.width = "100%";
 div2.style.height = "100%";
 div2.style.zIndex = "1";
-div2.style.transition = 'ease-in-out 0.3s';
-div2.style.background = 'transparent';
-
+div2.style.transition = "ease-in-out 0.3s";
 // h1 tag all properties
 
 h1.innerHTML = "This is Light Mode";
@@ -55,7 +56,7 @@ h1.style.fontSize = "72px";
 h1.style.margin = "0px";
 h1.style.color = "red";
 h1.style.zIndex = "10";
-h1.style.transition = 'ease-in-out 0.3s';
+h1.style.transition = "ease-in-out 0.3s";
 
 // button tag all properties
 
@@ -92,19 +93,14 @@ button2.style.border = "0px";
 // button event function
 
 button.addEventListener("click", () => {
-    // div2.style.background = "#000";
-    // div2.style.opacity = "0.7";
+    div2.style.background = "#000";
+    div2.style.opacity = "0.75";
     h1.style.color = "white";
     h1.innerHTML = "This is dark mode";
-    div2.classList.add('dark')
-    let night = document.querySelector('.dark')
-    night.style.background = '#000';
-    night.style.opacity = "0.7";
 });
 button2.addEventListener("click", () => {
-    // div2.style.background = "transparent";
-    // div2.style.opacity = "1";
-    div2.classList.remove('dark')
+    div2.style.background = "transparent";
+    div2.style.opacity = "1";
     h1.style.color = "red";
     h1.innerHTML = "This is Light Mode";
 });
