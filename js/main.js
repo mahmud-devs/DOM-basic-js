@@ -40,6 +40,8 @@ div2.style.width = "100%";
 div2.style.height = "100%";
 div2.style.zIndex = "1";
 div2.style.transition = 'ease-in-out 0.3s';
+div2.style.background = 'transparent';
+
 // h1 tag all properties
 
 h1.innerHTML = "This is Light Mode";
@@ -90,14 +92,19 @@ button2.style.border = "0px";
 // button event function
 
 button.addEventListener("click", () => {
-    div2.style.background = "#000";
-    div2.style.opacity = "0.7";
+    // div2.style.background = "#000";
+    // div2.style.opacity = "0.7";
     h1.style.color = "white";
     h1.innerHTML = "This is dark mode";
+    div2.classList.add('dark')
+    let night = document.querySelector('.dark')
+    night.style.background = '#000';
+    night.style.opacity = "0.7";
 });
 button2.addEventListener("click", () => {
-    div2.style.background = "transparent";
-    div2.style.opacity = "1";
+    // div2.style.background = "transparent";
+    // div2.style.opacity = "1";
+    div2.classList.remove('dark')
     h1.style.color = "red";
     h1.innerHTML = "This is Light Mode";
 });
