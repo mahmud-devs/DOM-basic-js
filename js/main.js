@@ -60,38 +60,6 @@ h1.style.transition = "ease-in-out 0.3s";
 
 // button tag all properties
 
-button.innerHTML = "Dark Mode";
-button.style.position = "absolute";
-button.style.left = "55%";
-button.style.top = "30%";
-button.style.transform = "translateX(-50%)";
-button.style.padding = "15px 30px ";
-button.style.background = "#1c1e53 ";
-button.style.color = "#FFF ";
-button.style.borderRadius = "25px ";
-button.style.fontWeight = "700 ";
-button.style.cursor = "pointer ";
-button.style.zIndex = "10 ";
-button.style.border = "0px";
-// button2 tag all properties
-
-button2.innerHTML = "Light Mode";
-button2.style.position = "absolute";
-button2.style.left = "45%";
-button2.style.top = "30%";
-button2.style.transform = "translateX(-50%)";
-button2.style.padding = "15px 30px ";
-button2.style.background = "#1c1e53 ";
-button2.style.color = "#FFF ";
-button2.style.borderRadius = "25px ";
-button2.style.fontWeight = "700 ";
-button2.style.cursor = "pointer ";
-
-button2.style.zIndex = "10 ";
-button2.style.border = "0px";
-
-// button event function
-
 button.addEventListener("click", () => {
     div2.style.background = "#000";
     div2.style.opacity = "0.75";
